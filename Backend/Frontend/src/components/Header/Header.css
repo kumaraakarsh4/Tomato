@@ -1,0 +1,89 @@
+.Header{
+    height: 35vw;
+    background-image: url(../../assets/Header.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size:cover;
+    border-radius: 10px;
+    position: relative;
+    margin: 10px auto;
+}
+
+.Header .content{
+  position: absolute;
+  display: flex;
+  align-items: start;
+  flex-direction: column;
+  gap: 1.5vw;
+  max-width: 50%;
+  bottom: 10%;
+  left: 6vw;
+}
+
+.Header .content h2{
+  font-weight: 600;
+  font-size: 3.5vw;
+  color: white;
+  animation:  fadeIn 2.5s;
+}
+
+.Header .content p{
+    font-weight: 500;
+    color: #fff;
+    font-size: large;
+    animation: fadeIn 3.5s;
+}
+
+/* CSS */
+.button-81 {
+  background-color: #fff;
+  border: 0 solid #e2e8f0;
+  border-radius: 1.5rem;
+  box-sizing: border-box;
+  color: var(--primary);
+  cursor: pointer;
+  display: inline-block;
+  font-size: 1.1rem;
+  font-weight: 600;
+  line-height: 1;
+  padding: 1rem 1.6rem;
+  text-align: center;
+  text-decoration-thickness: auto;
+  transition: all .1s cubic-bezier(.4, 0, .2, 1);
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  animation: fadeIn 5.5s;
+}
+
+.button-81:hover {
+  background-color: var(--primary);
+  transition: all .5s ease;
+  color: #fff;
+}
+
+
+@media only screen and (max-width: 768px) {
+  .Header {
+      height: 90vw; /* Adjust the height for smaller screens */
+  }
+
+  .Header .content {
+      max-width: 90%; /* Adjust the max-width for smaller screens */
+      bottom: 5%; /* Adjust the bottom position for smaller screens */
+      left: 10px; /* Adjust the left position for smaller screens */
+  }
+
+  .Header .content h2 {
+    font-size: 8vw; /* Adjust as needed for smaller screens */
+  }
+
+  .Header .content p {
+    font-size: 15px; /* Adjust as needed for smaller screens */
+  }
+
+  .button-81 {
+    font-size: 0.9rem; /* Adjust font size for smaller screens */
+    padding: 0.8rem 1.4rem; /* Adjust padding for smaller screens */
+  }
+}
